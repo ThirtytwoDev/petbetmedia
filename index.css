@@ -17,8 +17,8 @@
     /* Colors*/
     --white-color: #fff;
     --dark-color: #252525;
-    --primary-color: #3b141c;
-    --secondary-color: #f3961c;
+    --primary-color: #11212d;
+    --secondary-color: #4a5a6c;
     --light-pink-color: #faf4f5;
     --medium-gray-color: #ccc;
 
@@ -121,6 +121,7 @@ header .navbar {
 
 /*  Hero section styling*/
 .hero-section {
+    padding-left: 1px;
     display: flex;
     align-items: center;
     min-height: 100vh;
