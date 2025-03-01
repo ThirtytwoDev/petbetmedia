@@ -39,6 +39,7 @@
     --site-max-width: 1300px;
 }
 
+/* Stylings for the whole site */
 ul {
     list-style: none;
 }
@@ -61,6 +62,23 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width);
+}
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-l);
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
 }
 
 /* Navbar styling */ 
@@ -148,7 +166,7 @@ header .navbar {
 .hero-section .hero-details .button {
     padding: 10px 26px;
     border: 2px solid transparent;
-    color: var(--primary-color);
+    color: var(--dark-color);
     border-radius: var(--border-radius-m);
     background: var(--secondary-color);
     font-weight: var(--font-weight-medium);
@@ -171,6 +189,106 @@ header .navbar {
 .hero-section .hero-image-wrapper{
     max-width: 500px;
     margin-right: 30px;
+}
+
+/* 1.1 About section styling */
+.about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+/* 1.2 PERSONAL ADDITION: Developer Section styling */
+.developer-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.developer-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.developer-section .developer-image-wrapper .developer-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.developer-section .developer-details .section-title {
+    padding: 0;
+}
+
+.developer-section .developer-details {
+    max-width: 50%;
+}
+
+.developer-section .developer-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.developer-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.developer-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+}
+
+.developer-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
 }
 
 /* Responsive media query code for max width 900px */
@@ -233,5 +351,52 @@ header .navbar {
         margin-top: 17px;
         font-size: var(--font-size-l);
 
+    }
+
+    .hero-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-details .developer-section .developer-details{
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    /* 2.1 About Small */
+    .about-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio : 1;
+    }
+
+    /* 2.2 developer Small */
+    .developer-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .developer-section .developer-image-wrapper .developer-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio : 1;
     }
 }
