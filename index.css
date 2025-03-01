@@ -384,7 +384,7 @@ header .navbar {
         width: 100%;
         height: 100%;
         max-width: 250px;
-        aspect-ratio : 1;
+        aspect-ratio: 1;
     }
 
     /* 2.2 developer Small */
@@ -397,6 +397,6 @@ header .navbar {
         width: 100%;
         height: 100%;
         max-width: 250px;
-        aspect-ratio : 1;
+        aspect-ratio: 1;
     }
 }
