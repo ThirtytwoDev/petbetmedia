@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- A website created by Francis Munganga - francismunganga32@gmail.com -->
- <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,8 @@
         <!-- Linking FOnt Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="index.css">
+        <!-- Linking Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         
     </head>
     <body>
@@ -22,28 +24,28 @@
                 <ul class="nav-menu">
                     <button id="menu-close-button" class="fas fa-times"></button>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#hero" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Clients</a>
+                        <a href="#clients" class="nav-link">Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Testimonials</a>
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#gallery" class="nav-link">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Gallery</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Developer</a>
+                        <a href="#developer" class="nav-link">Developer</a>
                     </li>
                 </ul>
                 <button id="menu-open-button" class="fas fa-bars"></button>
@@ -52,7 +54,7 @@
 
         <main>
             <!-- Hero section -->
-            <section class="hero-section">
+            <section class="hero-section" id="hero">
                 <div class="section-content">
                     <div class="hero-details">
                         <h2 class="title">Best Branding and Printing Services in town!</h2>
@@ -71,7 +73,7 @@
             </section>
 
             <!-- About Section-->
-             <section class="about-section">
+            <section class="about-section" id="about">
                 <div class="section-content">
                     <div class="about-image-wrapper">
                         <img src="drake.jpg" alt="About" class="about-image">
@@ -87,13 +89,262 @@
                         </div>
                     </div>
                 </div>
-             </section>
+            </section>
 
-             <!-- Developer Section -->
-              <section class="developer-section">
+            <!-- Services section -->
+            <section class="services-section" id="services">
+                <div class="section-content">
+                    <h2 class="section-title">Services</h2>
+                    <ul class="services-list">
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                        <li class="service-item">
+                            <img src="drake.jpg" alt="Service" class="service-image">
+                            <h3 class="name">Service</h3>
+                            <p class="text">Details about service</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Clients section -->
+            <section class="clients-section" id="clients">
+                <h2 class="section-title">Clients</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="clients-list swiper-wrapper">
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="client swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="client-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                            </ul>
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials section -->
+            <section class="testimonials-section" id="testimonials">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="drake.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Fontaine X</h3>
+                                    <i class="feedback">"Loved your print services"</i>
+                                </li>
+                            </ul>
+
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery section -->
+            <section class="gallery-section" id="gallery">
+                <h2 class="section-title">Gallery</h2>
+                <div class="section-content">
+                    <ul class="gallery-list">
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="drake.jpg" alt="Gallery" class="gallery-image">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section class="contact-section" id="contact">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list">
+                        <li class="contact-info">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <p>Off Shantumbu Road, Woodlands, Lusaka</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>petbetmedia@gmail.com</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+260970000000</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Saturday: 8:00 AM - 5:00 PM</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Sunday: Closed</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>https://petbetmedia.render.com</p>
+                        </li>
+                    </ul>
+
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Your name" class="form-input" required>
+                        <input type="email" placeholder="Your email" class="form-input" required>
+                        <textarea placeholder="Your message" class="form-input"></textarea>
+                        <button class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Developer Section -->
+            <section class="developer-section" id="developer">
                 <div class="section-content">
                     <div class="developer-image-wrapper">
-                        <img src="drake.jpg" alt="Developer" class="developer-image">
+                        <img src="32.jpg" alt="Developer" class="developer-image">
                     </div>
                     <div class="developer-details">
                         <h2 class="section-title">Developer</h2>
@@ -104,12 +355,37 @@
                             <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
                             <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                             <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-solid fa-globe"></i></a>
                         </div>
                     </div>
                 </div>
-              </section>
+            </section>
+
+            <!-- Footer section -->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">&copy; 2025 PETBET Media</p>
+
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <p class="policy-text">
+                        <a href="#" class="policy-link">Privacy policy</a>
+                        <span class="separator">&bull;</span>
+                        <a href="#" class="policy-link">Refund policy</a>
+                    </p>
+                </div>
+            </footer>
         </main>
 
+        <!-- Linking Swiper script -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Linking custom script -->
         <script src="script.js"></script>
     </body>
- </html>
+</html>
