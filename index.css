@@ -445,7 +445,7 @@ header .navbar {
 
 /* Gallery section styling */
 .gallery-section {
-    padding: 50px - 100px;
+    padding: 50px 0 100px;
 }
 
 .gallery-section .gallery-list {
